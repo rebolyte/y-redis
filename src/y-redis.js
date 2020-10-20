@@ -162,6 +162,13 @@ export class RedisPersistence extends Observable {
     return pd
   }
 
+  /**
+   * @param {string} name
+   * @param {Y.Doc} ydoc
+   * @return {Promise<any>}
+   */
+  async writeState(name, ydoc) {}
+
   destroy () {
     const docs = this.docs
     this.docs = new Map()
